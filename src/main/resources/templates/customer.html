@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ro" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="customers: ${customers}">
+    <p th:text="${customers.getName() + ' ' + customers.getEmail()+\n}"></p>
+</div>
+<!--<div th:each="customers: ${customersById}">-->
+<!--    <p th:text="${customers.getName()}></p>-->
+<!--</div>-->
+</body>
+</html>
